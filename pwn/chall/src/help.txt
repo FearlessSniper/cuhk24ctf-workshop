@@ -1,0 +1,7 @@
+Commands:
+input: Change to input mode to enter contents.
+win: Display the address of the win function.
+main: Display the address of the main function.
+dump <n>: Dump <n> bytes of the memory after the buffer.
+quit: Leave the program.
+help: Print this help message.
