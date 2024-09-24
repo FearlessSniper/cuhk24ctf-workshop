@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <strings.h>
+#include <string.h>
 #include <ctype.h>
 
 #define MAX_LINE_LENGTH 8
@@ -48,26 +48,26 @@ void dump(void *mem, int size) {
 int main(int argc, char const *argv[]);
 
 void getwin() {
-    printf("win: %p", win);
+    printf("win: %p\n", win);
 }
 
 void getmain() {
-    printf("main: %p", main);
+    printf("main: %p\n", main);
 }
 
 void play() {
     puts("Hello there!");
     puts("What is your order for today? (Type 'help' for available commands)");
     printf("> ");
-    char command[32];
-    fgets(command, 32, stdin);
+    char command[8];
+    fgets(command, 8, stdin);
     command[strcspn(command, "\n")] = '\0';
     char content[16];
     while (1) {
         if (strcmp(command, "input") == 0) {
-            printf("Enter your stuff: ");
-            // scanf("%s", content);
-            gets(content);
+            printf("Enter your word: ");
+            scanf("%s", content);
+            // gets(content);
         } else if (strcmp(command, "win") == 0) {
             getwin();
         } else if (strcmp(command, "main") == 0) {
@@ -88,7 +88,7 @@ void play() {
             puts("Enter a valid command!");
         }
         printf("\n> ");
-        fgets(command, 32, stdin);
+        fgets(command, 8, stdin);
         command[strcspn(command, "\n")] = '\0';
     }
 }

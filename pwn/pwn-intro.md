@@ -116,12 +116,36 @@ When user enters too many characters, `gets` overruns the buffer and writes data
 
 ---
 
-# See More
+# Demo
+
+- Source: https://github.com/FearlessSniper/cuhk24ctf-workshop
+- Challenge:
+
+*Pwn it to win a can of coffee!*
+
+---
+
+# More Buffer Overflow
 
 1. [From Missingno to Heartbleed: Buffer Exploits and Buffer Overflows](https://youtu.be/rE5dW3BTpn4?si=fiIwxVejfd_FTyov)
 2. [Running a Buffer Overflow Attack - Computerphile](https://youtu.be/1S0aBV-Waeo?si=icStUTQSWhdYVXii)
 
 ---
 
-# Acknowledgements
+# Read more `pwn`
 
+- [ir0nstone: Cybersecurity Notes](https://ir0nstone.gitbook.io/notes)
+- [CTF Wiki](https://ctf-wiki.org/pwn/linux/user-mode/environment/)
+- [CTF 101: Binary Exploitation](https://ctf101.org/binary-exploitation/overview/)
+- [Azeria Labs (ARM)](https://azeria-labs.com/)
+
+---
+
+# Keywords
+- Stack Overflow
+- Heap Overflow
+- Use After Free
+- Double Free
+- GOT table
+- Format String Vulnerability
+- ROP (Return Oriented Programming)
