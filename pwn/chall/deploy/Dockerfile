@@ -12,7 +12,7 @@ COPY ./start.sh /start.sh
 RUN chmod +x /start.sh
 RUN echo "Blocked by ctf_xinetd" > /etc/banner_fail
 COPY ./ctf.xinetd /etc/xinetd.d/ctf
-COPY flag.txt /61_flag.txt
+COPY flag.txt /flag.txt
 
 EXPOSE 9999/tcp
 

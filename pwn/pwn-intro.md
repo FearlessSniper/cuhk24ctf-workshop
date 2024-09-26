@@ -10,6 +10,9 @@ marp: true
 section {
     font-size: 38px
 }
+section.small {
+    font-size: 27px
+}
 </style>
 
 # **CUHK CTF 2024**
@@ -17,6 +20,15 @@ section {
 
 Exploiting low-level behaviour for our own good :)
 *Made by F21endSh1p with ❤️*
+
+---
+
+<!-- _class: invert small -->
+
+# Code of Ethics
+- The exercises in this session should be attempted ONLY INSIDE THE SECLUDED LAB ENVIRONMENT documented or provided. Please note that most of the attacks described in the slides would be ILLEGAL if attempted on machines that you do not explicit permission to test and attack. You should bear responsibilities for any actions performed outside the secluded lab.
+- The challenge server should be regarded as a hostile environment. You should not use your real information when attempting challenges.
+- Do not intentionally disrupt other students who are working on the challenges or disclose private information you found on the challenge server (e.g. IP address of other students). Please let us know if you accidentally broke the challenge.
 
 ---
 
@@ -116,10 +128,12 @@ When user enters too many characters, `gets` overruns the buffer and writes data
 
 ---
 
+<!--footer: If you are using windows, maybe you can try `telnet` or `ncat`-->
+
 # Demo
 
 - Source: https://github.com/FearlessSniper/cuhk24ctf-workshop
-- Challenge:
+- Challenge: `nc workshop.f21endsh1p.me 9999`
 
 *Pwn it to win a can of coffee!*
 
@@ -149,3 +163,14 @@ When user enters too many characters, `gets` overruns the buffer and writes data
 - GOT table
 - Format String Vulnerability
 - ROP (Return Oriented Programming)
+
+---
+
+# Tools
+
+#### Exploit tools / Solve script development
+- pwntools
+#### Decompilation / Gadget Finding
+- Binary Ninja
+- IDA Pro
+- ROPGadget
