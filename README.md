@@ -23,4 +23,4 @@ nc workshop.f21endsh1p.me 9999
 *Limited availability. The challenge may be down without notice.*
 
 ## Solution
-Solution will be available soon. Stay tuned!
+Read the writeup for the challenge [here](pwn/chall/writeup/writeup.md)
